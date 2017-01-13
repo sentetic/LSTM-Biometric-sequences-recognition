@@ -1,5 +1,5 @@
 # LSTM-Biometric-sequences-recognition
-##introduction
+## introduction
 The purpose of this document is to identify a procedure for the proper recognition of the correct motion sequences, through the use of machine learning techniques.
 The problem
 The input data comes from the acquisition of a series of motion tracking devices (accelerometers) worn by the subject while performing a series of predefined assembly operations.
