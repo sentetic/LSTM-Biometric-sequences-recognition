@@ -26,7 +26,7 @@ The analysis produced significantly positive results. Despite the reduced number
 ![Fig. 3](https://github.com/sentetic/LSTM-Biometric-sequences-recognition/blob/master/docs/fig3.png)
 **fig. 3 - target function**
 
-In Figure 4 it has been reported the normalized error respect to the objective function, where it can be seen in the correct sequences, the procedure was reproduced with an 80% accuracy (the negative spikes are present in correspondence of the end of the motion sequence).
+In Figure 4 it has been reported the normalized error respect to the objective function, where it can be seen in the correct sequences, the procedure was reproduced with a good accuracy (the negative spikes are present in correspondence of the end of the motion sequence), meanwhile the incorrect sequences show a much larger error.
 
 ![Fig. 4](https://github.com/sentetic/LSTM-Biometric-sequences-recognition/blob/master/docs/fig4.png)
 **fig. 4 - absolute error**
