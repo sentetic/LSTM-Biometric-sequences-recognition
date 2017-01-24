@@ -21,19 +21,25 @@ To make sure that the algorithm could learn and generalize the input sequence, w
 The analysis produced significantly positive results. Despite the reduced number of samples to train the  model, it was possible to recognize with a good approximation the wrong sequences (see. Figure 3), in a completely automatic way and without any a priori mathematical definition of the sequence, with a good robustness to capture errors (variable length of sequences) and the intrinsec variance of the system under observation (low precision in the repeatability of the measure due to the human factor).
 
 ![Fig. 2](https://github.com/sentetic/LSTM-Biometric-sequences-recognition/blob/master/docs/fig2.png)
-**fig. 2**
+**fig. 2 - sampled data**
 
 ![Fig. 3](https://github.com/sentetic/LSTM-Biometric-sequences-recognition/blob/master/docs/fig3.png)
-**fig. 3**
+**fig. 3 - target function**
 
 In Figure 4 it has been reported the normalized error respect to the objective function, where it can be seen in the correct sequences, the procedure was reproduced with an 80% accuracy (the negative spikes are present in correspondence of the end of the motion sequence).
 
 ![Fig. 4](https://github.com/sentetic/LSTM-Biometric-sequences-recognition/blob/master/docs/fig4.png)
-**fig. 4**
+**fig. 4 - absolute error**
 
 ##Future developments
 The advantage of being able to code a sequence of movements, with a short learning time, allows the correct sequence identification even without the support of specialized technical skills.
 
 A further benefit of this solution consists in the possibility to classify the sub-sequences using the neural activation values of the predictive model. Doing so it is possible to compress with a minimum loss of resolution (ie by keeping more than 80% of the original information) each sequence of 128 samples x 18 parameters, using only a vector of 4 floating point elements, with a compression ratio of 1:576.
 
-With an higher number of acquisitions the spectral analysis, the variance and mean value of the error (see. Figure 6) can also be used for a classification of the types of error in the sequences, allowing to intervene in a targeted manner on posture errors, fatiguing and/or dangerous movements.
+With an higher number of acquisitions the spectral analysis, the variance and mean value of the error (see. Figure 5-6) can also be used for a classification of the types of error in the sequences, allowing to intervene in a targeted manner on posture errors, fatiguing and/or dangerous movements.
+
+![Fig. 5](https://github.com/sentetic/LSTM-Biometric-sequences-recognition/blob/master/docs/fig5.png)
+**fig. 5 - encoded representation**
+
+![Fig. 6](https://github.com/sentetic/LSTM-Biometric-sequences-recognition/blob/master/docs/fig6.png)
+**fig. 6 - spectral analysis**
