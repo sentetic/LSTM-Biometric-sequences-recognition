@@ -1,4 +1,4 @@
-# LSTM-Biometric-sequences-recognition
+# LSTM Biometric sequences recognition
 ##Introduction
 The purpose of this document is to identify a procedure for the proper recognition of the correct motion sequences, through the use of machine learning techniques.
 ##The problem
