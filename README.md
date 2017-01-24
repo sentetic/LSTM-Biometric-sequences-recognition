@@ -14,8 +14,8 @@ The reduced number of sequences available does not allow a classical supervised 
 We have therefore decided to use a new approach that exploited the ability of some deep neural network models (Deep phased-LSTM networks) to generalize in a very effective way sequences of multivariate data.
 
 ##Classification of subsequences
-To make sure that the algorithm could learn and generalize the input sequence, we have divided each original sequences into n subsequences of fixed length, through a rolling window with width 128 samples.
-![eq. 1](https://github.com/sentetic/LSTM-Biometric-sequences-recognition/blob/master/docs/eq1.png)
+To make sure that the algorithm could learn and generalize the input sequence, we have divided each original sequences into n subsequences of fixed length, through a rolling window with width 128 samples, pointing to a monotonic growing function as the target of our model.
+![Fig. 1](https://github.com/sentetic/LSTM-Biometric-sequences-recognition/blob/master/docs/schama_analisi.png)
 
 ##Results
 The analysis produced significantly positive results. Despite the reduced number of samples to train the  model, it was possible to recognize with a good approximation the wrong sequences (see. Figure 3), in a completely automatic way and without any a priori mathematical definition of the sequence, with a good robustness to capture errors (variable length of sequences) and the intrinsec variance of the system under observation (low precision in the repeatability of the measure due to the human factor).
