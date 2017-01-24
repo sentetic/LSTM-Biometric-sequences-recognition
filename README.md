@@ -15,6 +15,7 @@ We have therefore decided to use a new approach that exploited the ability of so
 
 ##Classification of subsequences
 To make sure that the algorithm could learn and generalize the input sequence, we have divided each original sequences into n subsequences of fixed length, through a rolling window with width 128 samples.
+![eq. 1](https://github.com/sentetic/LSTM-Biometric-sequences-recognition/blob/master/docs/eq1.png)
 
 ##Results
 The analysis produced significantly positive results. Despite the reduced number of samples to train the  model, it was possible to recognize with a good approximation the wrong sequences (see. Figure 3), in a completely automatic way and without any a priori mathematical definition of the sequence, with a good robustness to capture errors (variable length of sequences) and the intrinsec variance of the system under observation (low precision in the repeatability of the measure due to the human factor).
